@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .logo img {
+    width: 150px; 
+    height: auto;
+  }
+ 
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #fffdf7;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+  }
+  
+  header {
+    background-color: #d4a373;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ffe4c1;
+  }
+ 
+  .banner {
+    background: url('/img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner .btn {
+    background-color: #a0522d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .banner .btn:hover {
+    background-color: #704c34;
+  }
+
+  .produtos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff6eb;
+  }
+  
+  .produtos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #d4a373;
+  }
+  
+  .produtos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .produto-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .produto-card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .produto-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #a0522d;
+  }
+  
+  .produto-card p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .produto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .historia {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .historia h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #d4a373;
+  }
+  
+  .historia p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .historia img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .depoimentos {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  h4 {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .slider-buttons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .slider-buttons button {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .slider-buttons button:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .contato {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contato h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #d4a373;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #a0522d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #704c34;
+  }
+  
+  footer {
+    padding: 2rem;
+    background-color: #d4a373;
+    color: white;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+  }
+  
+  .social-icon {
+    width: 30px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: block;
+      text-align: center;
+      gap: 0;
+    }
+  
+    .nav-links a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .produtos-container {
+      flex-direction: column;
+    }
+  
+    .produto-card {
+      width: 100%;
+    }
+  
+    .banner h1 {
+      font-size: 36px;
+    }
+  
+    .banner p {
+      font-size: 16px;
+    }
+  
+    .banner .btn {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .contato form {
+      max-width: 100%;
+    }
+  
+    .slider-buttons button {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .produtos-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .produto-card {
+      width: 48%;
+    }
+  
+    .banner h1 {
+      font-size: 42px;
+    }
+  
+    .banner p {
+      font-size: 18px;
+    }
+  
+    .banner .btn {
+      font-size: 18px;
+      padding: 10px 20px;
+    }
+  
+    .contato form {
+      max-width: 80%;
+    }
+  
+    .slider-buttons button {
+      font-size: 18px;
+    }
+  }
+  
+  /* Desktop */
+  @media (min-width: 1025px) {
+    .produtos-container {
+      justify-content: space-around;
+    }
+  
+    .produto-card {
+      width: 30%;
+    }
+  
+    .banner h1 {
+      font-size: 48px;
+    }
+  
+    .banner p {
+      font-size: 20px;
+    }
+  
+    .banner .btn {
+      font-size: 20px;
+      padding: 12px 24px;
+    }
+  
+    .contato form {
+      max-width: 500px;
+    }
+  
+    .slider-buttons button {
+      font-size: 18px;
+    }
+  }
+  

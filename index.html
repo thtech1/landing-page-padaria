@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padaria Doce Sabor</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="/img/logotipo.jpg" alt="Logotipo da Padaria Doce Sabor">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="banner">
+    <h1>Descubra o sabor do pão artesanal!</h1>
+    <p>Feito com amor e tradição.</p>
+    <a href="#produtos" class="btn">Conheça nossos produtos</a>
+  </section>
+
+  <section id="historia" class="historia">
+    <h2>História da Padaria Doce Sabor</h2>
+    <p>Fundada há mais de 20 anos, a padaria Doce Sabor é um verdadeiro símbolo de qualidade e tradição em Feira de Santana. Com o compromisso de oferecer produtos artesanais feitos com ingredientes frescos e de alta qualidade, a Doce Sabor conquistou o coração de seus clientes. Todos os dias, nossas receitas são preparadas com carinho, respeitando as tradições que começaram com a nossa fundadora e se mantêm até hoje.</p>
+    <img src="/img/interior - padaria.webp" alt="Produtos da Padaria Doce Sabor">
+    <p>Com um atendimento acolhedor e um portfólio de produtos que vai de pães artesanais a bolos e doces incríveis, a Doce Sabor é mais que uma padaria, é um lugar onde você encontra o verdadeiro sabor do amor e da dedicação. Seja para um lanche rápido, para um evento especial ou para o dia a dia, estamos aqui para tornar seus momentos ainda mais saborosos.</p>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="produtos-container">
+      <div class="produto-card">
+        <img src="/img/pao.jpg" alt="Pães artesanais">
+        <h3>Pães</h3>
+        <p>A partir de R$ 5,00</p>
+      </div>
+      <div class="produto-card">
+        <img src="/img/bolo.webp" alt="Bolos artesanais">
+        <h3>Bolos</h3>
+        <p>A partir de R$ 20,00</p>
+      </div>
+      <div class="produto-card">
+        <img src="/img/doce.jpg" alt="Doces artesanais">
+        <h3>Doces</h3>
+        <p>A partir de R$ 2,50</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="depoimentos">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <p>"Os pães são incríveis! Nunca provei algo tão fresco e saboroso. A crocância da casca, combinada com a maciez do miolo, é perfeita. Eu e minha família somos fãs de pães artesanais, e o da padaria Doce Sabor se destaca de todos os outros que já experimentamos. A cada mordida, sentimos o cuidado na escolha dos ingredientes e a habilidade de quem faz. Além disso, a variedade de sabores é excelente, desde o pão integral até os mais elaborados com especiarias. Sempre que quero impressionar meus amigos ou oferecer algo especial, é na Doce Sabor que eu confio. O melhor de tudo é saber que não é só saboroso, mas também saudável e feito com amor!"</p>
+          <h4>— Maria A.</h4>
+        </div>
+        <div class="slide">
+          <p>"O bolo de aniversário da minha filha foi perfeito, superou todas as expectativas! Não foi apenas um bolo, foi uma verdadeira obra de arte! A decoração estava maravilhosa, perfeitamente alinhada com o tema da festa, e a combinação de sabores era impecável. O bolo tinha uma massa super fofa, um recheio cremoso e delicioso, que agradou tanto os adultos quanto as crianças. Todos os convidados ficaram encantados com o sabor e, sem dúvida, o bolo foi o centro das atenções da festa. Recebi elogios até dias depois da comemoração. Além disso, o atendimento foi excepcional! A equipe foi super atenciosa desde o primeiro contato, garantindo que o bolo ficasse exatamente como eu imaginava. Com certeza, para as próximas festas da família, vou continuar confiando na qualidade e no carinho da Doce Sabor!"</p>
+          <h4>— João P.</h4>
+        </div>
+        <div class="slide">
+          <p>"Os doces são simplesmente maravilhosos, sem contar o atendimento que é impecável. Cada doce é uma verdadeira explosão de sabores. Desde o brigadeiro, que é cremoso e no ponto certo, até os bolinhos de chuva que me transportam para a infância, todos são feitos com ingredientes de qualidade e com aquele toque artesanal que faz toda a diferença. Sou cliente fiel da padaria e não consigo mais comer doces de outros lugares! O atendimento, por sua vez, é sempre caloroso e atencioso. Eles se preocupam em ouvir as preferências de cada cliente e até oferecem sugestões incríveis. A cada pedido, sinto que estou levando um pedacinho da padaria para minha casa. Para quem busca sabor, qualidade e um atendimento diferenciado, a Doce Sabor é, sem dúvida, a melhor opção na cidade. Não canso de recomendar!"</p>
+          <h4>— Ana C.</h4>
+        </div>
+      </div>
+
+      <div class="slider-buttons">
+        <button class="prev">&lt;</button>
+        <button class="next">&gt;</button>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Nome" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="tel" name="telefone" placeholder="Telefone">
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+<footer>
+  <div class="footer-content">
+    <p>Endereço: Rua dos Padeiros, 123, Centro, Feira de Santana</p>
+    <p>Telefone: (75) 1234-5678 | E-mail: contato@docesabor.com</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/Docesabor" target="_blank">
+        <img src="/img/4102573_applications_facebook_media_social_icon.png" alt="Facebook" class="social-icon"> 
+      </a>
+      <a href="https://www.instagram.com/Docesabor" target="_blank">
+        <img src="/img/6929237_instagram_icon.png" alt="Instagram" class="social-icon"> 
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
